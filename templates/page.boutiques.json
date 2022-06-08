@@ -1,0 +1,41 @@
+{
+  "sections": {
+    "16530607471e14bdca": {
+      "type": "ST-HeroImage",
+      "settings": {
+        "Desktop": "shopify:\/\/shop_images\/Boutiques-Desktop.jpg",
+        "Mobile": "shopify:\/\/shop_images\/Boutiques-Mobile.jpg",
+        "alttext": "Find a Boutique",
+        "text_align": "align--bottom-center",
+        "text_color": "text--white",
+        "button_style": "btn btn--solid",
+        "content_padding": "100px",
+        "title": "Boutiques",
+        "description": "",
+        "link_text1": "",
+        "link1": "",
+        "link_text2": "",
+        "link2": "",
+        "background_color": ""
+      }
+    },
+    "main": {
+      "type": "page",
+      "settings": {
+        "kicker": "",
+        "show_title": false,
+        "show_content": true,
+        "text_size": 2,
+        "align_text": "text-left",
+        "height": "margin--small",
+        "width": "wrapper",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral"
+      }
+    }
+  },
+  "order": [
+    "16530607471e14bdca",
+    "main"
+  ]
+}

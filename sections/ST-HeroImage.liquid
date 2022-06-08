@@ -1,0 +1,176 @@
+<div class="section--image fade-in-child preventOverflow {{ section.settings.color }} has-overlay {{ section.settings.text_color }}" data-section-id="{{ section.id }}"id="FeaturedImage-{{ section.id }}" style="background-color:{{ section.settings.background_color }}">
+
+<a href="{{ section.settings.link1 }}">
+  <picture>
+    <source data-srcset="{{ section.settings.Desktop | img_url: 'master'  }}" media="(min-width: 500px)" srcset="{{ section.settings.Desktop | img_url: 'master'  }}">
+    <img class=" lazyloaded" data-src="{{ section.settings.Mobile | img_url: '700x' }}" src="{{ section.settings.Mobile | img_url: '700x' }}" class="lazyload fade-in" style="width: 100%;" alt="{{ section.settings.alttext }}">
+  </picture>
+</a>
+
+
+
+  {% unless section.settings.link_text1 == '' %}
+    <div class="hero__content__wrapper {{ section.settings.text_align }}" >
+    	<div style="padding: {{ section.settings.content_padding }}">
+        {% unless section.settings.title == '' %}<h2 class="h3">{{ section.settings.title | escape }}</h2>{% endunless %}
+        {% unless section.settings.description == '' %}<p>{{ section.settings.description }}</p>{% endunless %}
+        <div style="">
+          {% unless section.settings.link_text1 == '' %}<a class="{{ section.settings.button_style }}" href="{{ section.settings.link1 }}">{{ section.settings.link_text1 | escape }}</a>{% endunless %}
+          {% unless section.settings.link_text2 == '' %}<a class="{{ section.settings.button_style }}" href="{{ section.settings.link2 }}">{{ section.settings.link_text2 | escape }}</a>{% endunless %}
+    	</div></div>
+    </div>
+    <div class="hero__content__wrapper-mobile mobile-only text-center" style="">
+    	<div>
+        {% unless section.settings.title == '' %}<h2 class="h3">{{ section.settings.title | escape }}</h2>{% endunless %}
+        {% unless section.settings.description == '' %}<p>{{ section.settings.description }}</p>{% endunless %}
+        {% unless section.settings.link_text1 == '' %}<a class="{{ section.settings.button_style }}" href="{{ section.settings.link1 }}">{{ section.settings.link_text1 | escape }}</a>{% endunless %}
+        {% unless section.settings.link_text2 == '' %}<a class="{{ section.settings.button_style }}" href="{{ section.settings.link2 }}">{{ section.settings.link_text2 | escape }}</a>{% endunless %}
+    	</div>
+    </div>
+  
+      {% endunless %}
+  
+  
+
+</div>
+
+
+{% schema %}
+{
+  "name": "Hero Image V2",
+  "settings": [
+
+	{
+    "type": "image_picker",
+    "id": "Desktop",
+    "label": "Desktop image"
+    },
+	{
+    "type": "image_picker",
+    "id": "Mobile",
+    "label": "Mobile image"
+    },
+	{
+    "id": "alttext",
+    "type": "text",
+    "label": "Alt Text"
+    },
+    {
+      "type": "header",
+      "content": "CTA"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Alignment",
+      "default": "align--middle-center",
+      "options": [
+        { "value": "align--top-left", "label": "Top left"},
+        { "value": "align--top-center", "label": "Top center"},
+        { "value": "align--top-right", "label": "Top right"},
+        { "value": "align--middle-left", "label": "Middle left"},
+        { "value": "align--middle-center", "label": "Absolute center"},
+        { "value": "align--middle-right", "label": "Middle right"},
+        { "value": "align--bottom-left", "label": "Bottom left"},
+        { "value": "align--bottom-center", "label": "Bottom center"},
+        { "value": "align--bottom-right", "label": "Bottom right"}
+      ]
+    },
+    {
+      "type": "select",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "text--white",
+      "options": [
+        { "value": "text--neutral", "label": "Normal text"},
+        { "value": "text--white", "label": "White"},
+        { "value": "text--primary", "label": "Primary accent"},
+        { "value": "text--secondary", "label": "Secondary accent"},
+        { "value": "text--black", "label": "Black"},
+        { "value": "text--invert--primary", "label": "Primary dark accent"},
+        { "value": "text--invert--secondary", "label": "Secondary dark accent"},
+        { "value": "text--invert", "label": "Inverted text color"}
+      ]
+    },
+{
+      "type": "select",
+      "id": "button_style",
+      "label": "Button style",
+      "default": "btn btn--solid",
+      "options": [
+        { "value": "btn btn--solid", "label": "Solid button"},
+        { "value": "btn btn--soft", "label": "Soft button"},
+        { "value": "btn btn--outline", "label": "Outlined button"}
+      ]
+    },
+	{
+      "type": "text",
+      "id": "content_padding",
+      "label": "Padding",
+      "default": "100px"
+    },
+	{
+      "type": "text",
+      "id": "title",
+      "label": "Headline",
+      "default": "Image with text overlay"
+    },
+	{
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "This area is used to describe your store."
+    },
+	{
+      "type": "header",
+      "content": "Button 1"
+    },
+    {
+      "type": "text",
+      "id": "link_text1",
+      "label": "Text Button 1",
+      "default": "View products",
+      "info": "Leave blank to link entire image"
+    },
+    {
+      "type": "url",
+      "id": "link1",
+      "label": "Link"
+    },
+	{
+      "type": "header",
+      "content": "Button 2"
+    },
+    {
+      "type": "text",
+      "id": "link_text2",
+      "label": "Text",
+      "default": "View products",
+      "info": "Leave blank to link entire image"
+    },
+    {
+      "type": "url",
+      "id": "link2",
+      "label": "Link"
+    },{
+    "type": "text",
+    "id": "background_color",
+    "label": "Background Color"
+    }
+    
+  ],
+  "presets": [
+    {
+      "name": "Hero Image",
+      "category": "ScanlanTheodore Sections"
+      
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

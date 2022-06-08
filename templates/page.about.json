@@ -1,0 +1,199 @@
+{
+  "sections": {
+    "hero": {
+      "type": "section-hero",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Section2-Desktop_331eb364-22c9-4041-b91b-e99c4c246b2a.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Section2-Mobile_c632f533-5121-4567-b7ef-43d875eeb7e5.jpg",
+        "bg_position": "center-center",
+        "height": "use_screen_full",
+        "overlay_opacity": 5,
+        "overlay_color": "#000000",
+        "kicker": "",
+        "title": "About",
+        "richtext": "<p>For over 30 years women have embraced Scanlan Theodore’s modern elegance and independent spirit as their very own. Synonymous with intelligent well-crafted designs, Scanlan Theodore’s devotion to simple, clean, modern aestheticism has not changed since its inception in 1987. The labels dedication to independent beauty is infused in each Scanlan Theodore creation, defining a new genre of femininity. The Scanlan Theodore woman is confident, intelligent and complex — for it’s all the layered facets of life that make a design, an image and indeed a woman, a timeless beauty of memorable quality.<\/p>",
+        "text_align": "align--bottom-left",
+        "text_color": "text--white",
+        "link_text": "",
+        "link": "",
+        "button_color": "btn--white",
+        "button_style": "btn"
+      }
+    },
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "show_title": false,
+        "show_content": true,
+        "text_size": 2,
+        "align_text": "text-left",
+        "height": "margin--small",
+        "width": "wrapper",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral"
+      }
+    },
+    "custom-content-1": {
+      "type": "section-custom-content",
+      "disabled": true,
+      "blocks": {
+        "custom-content-1-0": {
+          "type": "video",
+          "settings": {
+            "video_link_bg": "",
+            "object_position": "center-center",
+            "bg_position": "center-center",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "popup_text": "Learn our story",
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "overlay_opacity": 55,
+            "overlay_color": "#000000",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "custom-content-1-1": {
+          "type": "text",
+          "settings": {
+            "kicker": "Quality first",
+            "title": "",
+            "text": "<p>We started making the products we wanted to see in the world and we did this with an uncompromising approach to sustainability.<\/p>",
+            "text_size": 2,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "caps--link",
+            "text_color": "text--neutral",
+            "bg_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "custom-content-1-0",
+        "custom-content-1-1"
+      ],
+      "settings": {
+        "height": "use_screen_one_half",
+        "padding": false,
+        "borders": false,
+        "wrapper": false
+      }
+    },
+    "custom-content-2": {
+      "type": "section-custom-content",
+      "disabled": true,
+      "blocks": {
+        "custom-content-2-0": {
+          "type": "text",
+          "settings": {
+            "kicker": "Humble beginnings",
+            "title": "",
+            "text": "<p>Our story begins in a small shop with a small team. With nothing but passion and a dream our brand was born. <\/p>",
+            "text_size": 2,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "caps--link",
+            "text_color": "text--neutral",
+            "bg_color": "#ffffff"
+          }
+        },
+        "custom-content-2-1": {
+          "type": "video",
+          "settings": {
+            "video_link_bg": "",
+            "object_position": "center-center",
+            "bg_position": "center-center",
+            "video_link": "",
+            "popup_text": "",
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "overlay_opacity": 50,
+            "overlay_color": "#000000",
+            "link_text": "Our Pledge",
+            "link": "shopify:\/\/pages\/faq",
+            "button_color": "btn--white",
+            "button_style": "btn--soft"
+          }
+        }
+      },
+      "block_order": [
+        "custom-content-2-0",
+        "custom-content-2-1"
+      ],
+      "settings": {
+        "height": "use_screen_one_half",
+        "padding": false,
+        "borders": false,
+        "wrapper": false
+      }
+    },
+    "icons": {
+      "type": "section-icons",
+      "disabled": true,
+      "blocks": {
+        "icons-0": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-basket-return",
+            "icon_color": "#aaaaaa",
+            "title": "Free returns",
+            "text": "<p>Returns within 30 days receive a full refund.<\/p>"
+          }
+        },
+        "icons-1": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-shipment-world",
+            "icon_color": "#aaaaaa",
+            "title": "Worldwide shipping",
+            "text": "<p>Ship anywhere, rates available at checkout.<\/p>"
+          }
+        },
+        "icons-2": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-phone",
+            "icon_color": "#aaaaaa",
+            "title": "24\/7 support",
+            "text": "<p>Call us anytime at 1(800) 555-1234.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "icons-0",
+        "icons-1",
+        "icons-2"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--accent",
+        "icon_size": "icon--medium",
+        "icon_alignment": "icon--top",
+        "align_text": "text-left"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "main",
+    "custom-content-1",
+    "custom-content-2",
+    "icons"
+  ]
+}

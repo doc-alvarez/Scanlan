@@ -1,0 +1,17 @@
+#gf-products a.grid__image {position: relative;}
+#gf-products a.grid__image img {position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;}
+#gf-products a.grid__image.hover-effect img.hover,#gf-products a.grid__image.hover-effect:hover img {opacity:0}
+#gf-products a.grid__image.hover-effect:hover img.hover {opacity:1}
+.theme-store-id-739.spf-layout-theme.spf-has-filter #gf-products {
+
+    column-gap: 0px !important;
+    row-gap: 0px !important;
+}
+#gf-products .grid__title{    font-size: 10px;
+    line-height: 16px;}
+#gf-products .price_wrapper{    font-size: 11px;
+    line-height: 17px;}

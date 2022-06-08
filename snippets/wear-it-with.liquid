@@ -1,0 +1,32 @@
+{% if  product.metafields.my_fields.wiw %}
+<h4 class="text-center" style="padding-top: 10px;">Wear it With</h4>
+<div class="weat-it-with-section" style="padding-bottom: 10px">
+  <div class="js-grid" data-grid-large="4" data-grid-small="2">
+    {% assign look_products =  product.metafields.my_fields.wiw.value %}
+    {% for product in look_products  %}     
+    {% include 'product-grid-item-2' %}
+    {% endfor %}
+  </div>
+</div>
+
+{% else %}
+{% if product.metafields.ColorSwatches.look%}
+{% assign completelook = product.metafields.ColorSwatches.look %}
+{% assign completelook = completelook | split:" , "  %}
+
+<h4 class="text-center" style="padding-top: 10px">Wear it With</h4>
+<div class="weat-it-with-section" style="padding-bottom: 10px">
+
+  <div class="js-grid" data-grid-large="4" data-grid-small="2">
+    {% for productlook in completelook %}
+
+    {% assign product = all_products[productlook]%}
+    {% if product.available == true %}
+    {% include 'product-grid-item-2' %}
+    {% endif %}  
+
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+{% endif %}

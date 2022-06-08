@@ -1,0 +1,89 @@
+{
+  "sections": {
+    "1654119740cc7df1dc": {
+      "type": "ST-HeroImage",
+      "settings": {
+        "Desktop": "shopify:\/\/shop_images\/Boutiques-Desktop.jpg",
+        "Mobile": "shopify:\/\/shop_images\/Boutiques-Mobile.jpg",
+        "alttext": "",
+        "text_align": "align--bottom-center",
+        "text_color": "text--white",
+        "button_style": "btn btn--solid",
+        "content_padding": "100px",
+        "title": "Returns",
+        "description": "",
+        "link_text1": "",
+        "link1": "",
+        "link_text2": "",
+        "link2": "",
+        "background_color": ""
+      }
+    },
+    "16541185559fe88126": {
+      "type": "section-icons",
+      "blocks": {
+        "16541185552e49acac-0": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-basket-return",
+            "icon_alt": "shopify:\/\/shop_images\/Returns_Policy_Icon_Height29px_1599718326201_61f14641-5b4f-4eca-aca5-8f5192886587.png",
+            "icon_color": "#aaaaaa",
+            "title": "Return Policy",
+            "text": "<p>Read our online returns policy to ensure<br\/>your order is applicable for a return.<\/p><p><a href=\"\/pages\/shipping-and-returns\" title=\"Shipping and Returns\">FIND OUR MORE<\/a><\/p>"
+          }
+        },
+        "16541185552e49acac-1": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-shipment-world",
+            "icon_alt": "shopify:\/\/shop_images\/Return_Online_Icon_Height29px_1599718421664.png",
+            "icon_color": "#aaaaaa",
+            "title": "RETURN ONLINE",
+            "text": "<p>Visit our online portal to request<br\/>a return.<\/p><p><a href=\"https:\/\/scanlantheodore-us.loopreturns.com\/#\/\" target=\"_blank\" title=\"Online Returns\">START A RETURN<\/a><\/p>"
+          }
+        },
+        "16541185552e49acac-2": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-phone",
+            "icon_alt": "shopify:\/\/shop_images\/Where_To_Return_Icon_Height29px_1599718478592.png",
+            "icon_color": "#aaaaaa",
+            "title": "WHERE TO RETURN",
+            "text": "<p>Return or exchange your items at your nearest boutique.<\/p><p><a href=\"\/pages\/boutiques\" title=\"Boutiques\">LOCATE A BOUTIQUE<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16541185552e49acac-0",
+        "16541185552e49acac-1",
+        "16541185552e49acac-2"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--neutral",
+        "icon_size": "icon--large",
+        "icon_alignment": "icon--top",
+        "align_text": "text-left"
+      }
+    },
+    "main": {
+      "type": "page",
+      "settings": {
+        "kicker": "",
+        "show_title": false,
+        "show_content": true,
+        "text_size": 2,
+        "align_text": "text-left",
+        "height": "margin--small",
+        "width": "wrapper",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral"
+      }
+    }
+  },
+  "order": [
+    "1654119740cc7df1dc",
+    "16541185559fe88126",
+    "main"
+  ]
+}

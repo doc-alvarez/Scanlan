@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "main": {
+      "type": "search",
+      "settings": {
+        "show_filters": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

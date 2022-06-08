@@ -1,0 +1,173 @@
+{
+  "sections": {
+    "16444186292e6ec3c1": {
+      "type": "ST-HeroImage",
+      "settings": {
+        "Desktop": "shopify:\/\/shop_images\/1_-_Cantaloupe_-_Desktop.jpg",
+        "Mobile": "shopify:\/\/shop_images\/1_-_Cantaloupe_-_Mobile.jpg",
+        "alttext": "",
+        "text_align": "align--middle-right",
+        "text_color": "text--black",
+        "button_style": "btn btn--solid",
+        "content_padding": "15%",
+        "title": "Just in",
+        "description": "",
+        "link_text1": "DISCOVER NEW ARRIVALS",
+        "link1": "shopify:\/\/collections\/new-arrivals",
+        "link_text2": "",
+        "link2": "",
+        "background_color": ""
+      }
+    },
+    "16486624386255be22": {
+      "type": "ST-Product-Carrusel",
+      "blocks": {
+        "9d473e6c-b5b8-470a-875d-b6134ffca62e": {
+          "type": "select",
+          "settings": {
+            "link": "floral-weave-bustier-cantaloupe"
+          }
+        },
+        "71f0b0e0-5191-4573-b14b-f03b74ebb071": {
+          "type": "select",
+          "settings": {
+            "link": "floral-weave-pleat-skirt-cantaloupe"
+          }
+        },
+        "16486624386cdd0216-0": {
+          "type": "select",
+          "settings": {
+            "link": "floral-brocade-bra-cantaloupe"
+          }
+        },
+        "51182184-bce2-450b-8f65-bb9299a0bd6d": {
+          "type": "select",
+          "settings": {
+            "link": "floral-brocade-trouser-cantaloupe"
+          }
+        },
+        "50c95342-f13b-4787-a1b3-5caf4ff3e279": {
+          "type": "select",
+          "settings": {
+            "link": "sateen-pleat-wide-leg-trouser-parchment"
+          }
+        },
+        "16486624386cdd0216-1": {
+          "type": "select",
+          "settings": {
+            "link": "silk-strapping-tank-white"
+          }
+        },
+        "351250f1-4127-4e42-8da1-cdbb0526d5d2": {
+          "type": "select",
+          "disabled": true,
+          "settings": {
+            "link": "butterfly-dragon-short-chocolate"
+          }
+        }
+      },
+      "block_order": [
+        "9d473e6c-b5b8-470a-875d-b6134ffca62e",
+        "71f0b0e0-5191-4573-b14b-f03b74ebb071",
+        "16486624386cdd0216-0",
+        "51182184-bce2-450b-8f65-bb9299a0bd6d",
+        "50c95342-f13b-4787-a1b3-5caf4ff3e279",
+        "16486624386cdd0216-1",
+        "351250f1-4127-4e42-8da1-cdbb0526d5d2"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "1645110878d2fc1c21": {
+      "type": "ST-HeroImage",
+      "settings": {
+        "Desktop": "shopify:\/\/shop_images\/2_-_Psyco_-_desktop.jpg",
+        "Mobile": "shopify:\/\/shop_images\/2_-_Psyco_-_mobile.jpg",
+        "alttext": "",
+        "text_align": "align--bottom-left",
+        "text_color": "text--white",
+        "button_style": "btn btn--solid",
+        "content_padding": "10%",
+        "title": "",
+        "description": "",
+        "link_text1": "SHOP TOPS",
+        "link1": "shopify:\/\/collections\/tops",
+        "link_text2": "SHOP PANTS",
+        "link2": "shopify:\/\/collections\/pants",
+        "background_color": ""
+      }
+    },
+    "1649778404be2f0f1e": {
+      "type": "ST-HeroImage",
+      "settings": {
+        "Desktop": "shopify:\/\/shop_images\/3_-_Swim-Desktop.jpg",
+        "Mobile": "shopify:\/\/shop_images\/3_-_Swim-Mobile.jpg",
+        "alttext": "",
+        "text_align": "align--middle-right",
+        "text_color": "text--white",
+        "button_style": "btn btn--solid",
+        "content_padding": "10%",
+        "title": "sunshine essentials",
+        "description": "",
+        "link_text1": "SHOP SWIMWEAR",
+        "link1": "shopify:\/\/collections\/swim",
+        "link_text2": "",
+        "link2": "",
+        "background_color": ""
+      }
+    },
+    "1649778582be7f98d1": {
+      "type": "ST-Product-Carrusel",
+      "blocks": {
+        "1649778582646f052f-0": {
+          "type": "select",
+          "settings": {
+            "link": "printed-bralet-choc-tan"
+          }
+        },
+        "787ce5d3-c325-40b7-bbb6-6997bee0e709": {
+          "type": "select",
+          "settings": {
+            "link": "high-waist-bottom-chocolate"
+          }
+        },
+        "f9a8a3b3-350c-4f2a-851e-58b0d8aed9cb": {
+          "type": "select",
+          "settings": {
+            "link": "bralet-chocolate"
+          }
+        },
+        "1649778582646f052f-1": {
+          "type": "select",
+          "settings": {
+            "link": "printed-high-waist-bottom-choc-tan"
+          }
+        },
+        "b1b4bfb1-0330-41c7-bff5-f5d605c33ffb": {
+          "type": "select",
+          "settings": {
+            "link": "one-piece-black"
+          }
+        }
+      },
+      "block_order": [
+        "1649778582646f052f-0",
+        "787ce5d3-c325-40b7-bbb6-6997bee0e709",
+        "f9a8a3b3-350c-4f2a-851e-58b0d8aed9cb",
+        "1649778582646f052f-1",
+        "b1b4bfb1-0330-41c7-bff5-f5d605c33ffb"
+      ],
+      "settings": {
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "16444186292e6ec3c1",
+    "16486624386255be22",
+    "1645110878d2fc1c21",
+    "1649778404be2f0f1e",
+    "1649778582be7f98d1"
+  ]
+}

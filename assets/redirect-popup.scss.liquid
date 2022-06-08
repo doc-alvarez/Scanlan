@@ -1,0 +1,130 @@
+/* START of redirect popup */
+.redirect-popup {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("{{ settings.redirect_popup_image_desktop | img_url: '2048x' }}");
+
+  .content-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .content {
+      padding: 0 10%;
+
+      .heading {
+        font-family:  var(---font-stack-heading);
+        font-size: 19px;
+        line-height: 25px;
+        letter-spacing: 0.8px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 30px;
+      }
+
+      .subheading {
+        font-family:  var(---font-stack-heading);
+        font-size: 19px;
+        line-height: 25px;
+        letter-spacing: 0.8px;
+        text-align: left;
+        color: #fff;        
+      }
+
+      p {
+        font-family:  var(---font-stack-body);
+        font-size: 15px !important;
+        line-height: 19px;
+        letter-spacing: 0.5px;
+        color: #fff;            
+      }
+
+      select {
+        display: block;
+        width: 100%;
+        border: none;
+        height: 32px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+        background: #fff;
+        -webkit-appearance: auto;
+        background-image: none;        
+      }
+
+      .btn {
+        background: #000;
+        border: none;
+        color: #ffffff;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        height: auto;
+        margin: 0;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 10px;
+        min-width: 120px;
+        text-align: center;
+        display: block;
+
+        &:hover {
+          background: #232323;
+        }
+      }
+    }
+  }
+
+  .redirect-popup-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-image: url('../assets/Cross_Icon.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1149px) { 
+  .redirect-popup {
+    background-image: url("{{ settings.redirect_popup_image_tablet_landscape | img_url: '1200x' }}");
+  }
+}
+
+@media only screen and (max-width: 959px) { 
+  .redirect-popup {
+    background-image: url("{{ settings.redirect_popup_image_tablet_portrait | img_url: '1000x' }}");
+  }
+}
+
+@media only screen and (max-width: 600px) { 
+  .redirect-popup {
+    background-image: url("{{ settings.redirect_popup_image_mobile | img_url: '600x' }}");
+      
+    .content-wrapper {
+      .content {
+        padding: 0;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+/* END of redirect popup */

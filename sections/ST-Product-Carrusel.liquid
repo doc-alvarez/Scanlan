@@ -1,0 +1,130 @@
+<div class="wrapper" style="width: 100%;">
+  {% if section.settings.title %} <h4 class="text-center h5">{{ section.settings.title }}</h4>{% endif %}
+  <div data-flickity='{ "cellAlign": "right", "contain": true,  "pageDots": false}' >
+     {% for block in section.blocks %}
+     	{% assign product = all_products[block.settings.link] %}
+		{%- assign product_img = product.featured_media.preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+        {%- assign double_img = false -%}
+        {% if product.media[1].preview_image and settings.image_hover_enable %}
+          {%- assign double_img = true -%}
+        {% endif %}
+
+      {% comment %}
+    {% include 'product-grid-item' %}
+      {% endcomment %}
+      
+      
+      
+      
+      <div class="grid__item product-grid-item medium-up--one-quarter small--one-half">
+  <div {{ auto_height }}  style="padding:0px 5px">
+    <a href="{{ product.url | within: collection }}" class="lazy-image{% if double_img %} double__image{% endif %}" style="padding-top:{{ 1 | divided_by: product.featured_media.preview_image.aspect_ratio | times: 100}}%; background-image:  url('{{ product.featured_media.preview_image | img_url: '1x1' }}');">
+      <img class="lazyload fade-in"
+        alt="{{ product.featured_media.preview_image.alt | default: product.title  }}"
+        data-src="{{ product_img }}"
+        data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048, 2450, 2700, 3000, 3350, 3750, 4100, 4480]"
+        data-aspectratio="{{  product.featured_media.preview_image.aspect_ratio }}"
+        data-sizes="auto"/>
+      
+        <div class="collection__image__bottom lazyload" data-bgset="{% include 'bgset', image: product.media[1].preview_image %}" role="img" aria-label="{{ product.media[1].alt }}"></div>
+      
+      {{ sticker }}
+    </a>
+  </div>
+  <noscript>
+    <a href="{{ product.url | within: collection }}">
+      <img src="{{ product.featured_media.preview_image | img_url: '360x' }}" alt="{{ product.featured_media.preview_image.alt | default: product.title  }}">
+    </a>
+  </noscript>
+  <div class="{{ settings.collection_text_alignment | default: 'text-center' }}" style="">
+    <a href="{{ product.url | within: collection | capitalize }}">
+      <p class="h5--accent strong name_wrapper">
+        {{ product.title }}
+      </p>
+      <p class="price_wrapper">
+        <span class="price{% if on_sale %} on-sale{% endif %}">
+          {% if product.price_varies %}{{ 'products.general.from' | t }} {% endif %}
+          <span class="money">{{ product.price | money }}</span>
+        </span>
+        {% if sold_out %}
+        <br /><em>{{ 'products.product.sold_out' | t }}</em>
+        {% endif %}
+        {% if on_sale %}
+        <span class="compare-at">
+          <span class="money">{{ product.compare_at_price | money }}</span>
+        </span>
+        {% endif %}
+        {% if product.metafields.spr.reviews %}
+          <br />
+          <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+        {% endif %}
+      </p>
+    </a>
+  </div>
+</div>
+      
+      
+     
+	{% endfor%}
+      
+        
+
+      
+    </div>
+
+
+
+</div>
+
+
+
+
+{% schema %}
+  {
+  "name": "Product Carrousel",
+  "max_blocks": 20,
+  "settings": [
+    {
+      "id": "title",
+      "type": "text",
+      "label": "Heading",
+      "default": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add Product",
+      "settings": [
+		{
+        "type": "product",
+        "id": "link",
+        "label": "Select a product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Carrousel",
+      "category": "ScanlanTheodore Sections",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+
+{% endjavascript %}

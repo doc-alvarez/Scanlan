@@ -1,0 +1,155 @@
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "product_show_vendor": false,
+            "show_rating": true,
+            "show_rating_count": false
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+            "variant_form": "button",
+            "show_quantity": false,
+            "show_remaining": false,
+            "enable_payment_button": false,
+            "subscriptions_enable_selectors": false,
+            "info_page": "size-guide"
+          }
+        },
+        "3ee2613b-825b-4b2b-ab34-55d3e7f604ff": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "<span style=\"padding: 0px 20px; text-transform: uppercase; font-weight: bold;\">SHIPS IMMEDIATELY<\/span>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "read_more": true,
+            "style": "accordions",
+            "title_1": "Product Details",
+            "raw_content_1": "<p>{{ product.metafields.my_fields.product_details | metafield_tag }}<\/p>",
+            "title_2": "Shipping & Returns",
+            "raw_content_2": "<p>Free shipping in the US<\/p><p>Full price online orders are eligible for refund, provided the goods have not been used, worn, altered, damaged or washed, have all tags attached and are in their original packaging. <\/p><p>All sale items are final and cannot be returned or exchanged. We do not price match.<\/p><p>Returned goods must be received no later than 14 days from the date the shipment is delivered.<\/p><p>Returns that do not meet our policy will be sent back to you.<\/p><p>A $15 return shipping and restocking fee will be applied to all returned orders (either partial or full)<\/p><p>Please review <a href=\"https:\/\/us.scanlantheodore.com\/pages\/shipping-and-returns\" title=\"Shipping and Returns\">our policy<\/a> for more information<\/p><p>To start a return <a href=\"\/pages\/returns\" title=\"Returns\">click here<\/a><\/p>",
+            "title_3": "Any question about this product?",
+            "raw_content_3": "<p>For any size or fit inquiries, please call <a href=\"tel:+12125645039%20\" target=\"_blank\" title=\"Call us\">+1 212 564 5039<\/a><\/p><p>Monday - Saturday: 10am - 9pm<br\/>Sunday: 11am - 7pm<\/p>",
+            "title_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "raw_content_5": ""
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "disabled": true,
+          "settings": {}
+        },
+        "sharing": {
+          "type": "sharing",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "form",
+        "3ee2613b-825b-4b2b-ab34-55d3e7f604ff",
+        "description",
+        "pickup",
+        "sharing"
+      ],
+      "settings": {
+        "image_width": "wide",
+        "align": "left",
+        "product_breadcrumbs": true,
+        "enable_video_looping": true,
+        "zoom_enable": true,
+        "bg": "palette--light bg--neutral"
+      }
+    },
+    "related": {
+      "type": "related",
+      "settings": {
+        "heading": "You might also like",
+        "bg": "palette--light bg--neutral",
+        "related_products_enable": true,
+        "limit": 4,
+        "product_recommendations_heading": "Related products",
+        "show_recently_viewed": true,
+        "product_recently_limit": 4,
+        "product_recently_minimum": 4,
+        "product_recently_heading": "Recently viewed"
+      }
+    },
+    "image-with-text": {
+      "type": "section-double",
+      "disabled": true,
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "bg_position": "center-center",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn uppercase"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "kicker": "Image with text",
+            "title": "",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 2,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "caps--link",
+            "text_color": "text--neutral",
+            "bg_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image",
+        "text"
+      ],
+      "settings": {
+        "height": "use_screen_one_half",
+        "padding": true,
+        "borders": false,
+        "wrapper": true
+      }
+    },
+    "reviews": {
+      "type": "reviews",
+      "disabled": true,
+      "settings": {
+        "product_reviews_enable": false,
+        "bg": "palette--light bg--accent"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related",
+    "image-with-text",
+    "reviews"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "sections": {
+    "16541062640cc251af": {
+      "type": "ST-HeroImage",
+      "settings": {
+        "Desktop": "shopify:\/\/shop_images\/1_-_D4BLaunch-Botanical.jpg",
+        "Mobile": "shopify:\/\/shop_images\/1_-_D4BLaunch-Botanical-Mobile.jpg",
+        "alttext": "",
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "button_style": "btn btn--solid",
+        "content_padding": "100px",
+        "title": "",
+        "description": "",
+        "link_text1": "",
+        "link1": "",
+        "link_text2": "",
+        "link2": "",
+        "background_color": ""
+      }
+    },
+    "main": {
+      "type": "page",
+      "settings": {
+        "kicker": "",
+        "show_title": false,
+        "show_content": true,
+        "text_size": 2,
+        "align_text": "text-left",
+        "height": "margin--small",
+        "width": "wrapper",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral"
+      }
+    }
+  },
+  "order": [
+    "16541062640cc251af",
+    "main"
+  ]
+}
