@@ -306,3 +306,42 @@
     </div>
   {% endform %}
 </div>
+<style>
+  .fixedDiego {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  .fixedDiego button {
+    border: transparent;
+    height: 82px;
+    text-align: center;
+    font-size: 14px !important;
+  }
+  .section-related.js.palette--light.bg--neutral {
+    position: relative;
+    z-index: 0;
+  }
+</style>
+<script>
+  if (window.innerWidth < 768) {
+    window.onscroll = () => {
+      let el = document.querySelector('.product__submit__buttons');
+      let cont = document.querySelector('.single-product-info-container')
+      let he = document.querySelector('.theme__header');
+      if (window.scrollY >= 1000) {
+        el.classList.add('fixedDiego');
+        cont.style.position = 'relative';
+        // he.style.top = '28px';
+     
+      } else {
+        cont.style.position = 'sticky';
+        he.style.top = 0;
+        el.classList.remove('fixedDiego')
+      }
+    }
+  }
+</script>
+
