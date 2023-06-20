@@ -111,7 +111,7 @@
             "disabled": true,
             "settings": {
               "position": "3",
-              "product": "crepe-knit-cap-sleeve-dress-blush"
+              "product": "crepe-knit-cap-slv-dress-blush"
             }
           },
           "23e692d2-1629-4903-b8d3-1b264e7aa286": {
@@ -289,20 +289,25 @@
           "cookies",
           "newsletter_signup"
         ],
-        "settings": {}
+        "settings": {
+        }
       }
     },
-    "content_for_index": [],
+    "content_for_index": [
+
+    ],
     "blocks": {
       "2153490007123654574": {
         "type": "shopify:\/\/apps\/gdpr-ccpa-cookie-management\/blocks\/gdpr_cookie_consent\/4fbe573f-a377-4fea-9801-3ee0858cae41",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "855628211100114053": {
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       }
     }
   },
@@ -345,19 +350,22 @@
             "announce_text": {
               "type": "text",
               "disabled": true,
-              "settings": {}
+              "settings": {
+              }
             },
             "announce_shipping": {
               "type": "message",
               "disabled": true,
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
             "announce_text",
             "announce_shipping"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "header": {
           "type": "header",
@@ -365,7 +373,8 @@
             "collection_block": {
               "type": "collection",
               "disabled": true,
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -387,11 +396,13 @@
             },
             "text": {
               "type": "text",
-              "settings": {}
+              "settings": {
+              }
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -399,7 +410,8 @@
             "text",
             "newsletter"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "popups": {
           "type": "popups",
@@ -419,14 +431,16 @@
             "newsletter_signup": {
               "type": "newsletter",
               "disabled": true,
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
             "cookies",
             "newsletter_signup"
           ],
-          "settings": {}
+          "settings": {
+          }
         }
       }
     },
@@ -470,19 +484,22 @@
             "announce_text": {
               "type": "text",
               "disabled": true,
-              "settings": {}
+              "settings": {
+              }
             },
             "announce_shipping": {
               "type": "message",
               "disabled": true,
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
             "announce_text",
             "announce_shipping"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "header": {
           "type": "header",
@@ -490,7 +507,8 @@
             "collection_block": {
               "type": "collection",
               "disabled": true,
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -512,11 +530,13 @@
             },
             "text": {
               "type": "text",
-              "settings": {}
+              "settings": {
+              }
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -524,7 +544,8 @@
             "text",
             "newsletter"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "popups": {
           "type": "popups",
@@ -544,14 +565,16 @@
             "newsletter_signup": {
               "type": "newsletter",
               "disabled": true,
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
             "cookies",
             "newsletter_signup"
           ],
-          "settings": {}
+          "settings": {
+          }
         }
       }
     },
@@ -605,19 +628,22 @@
             "announce_text": {
               "type": "text",
               "disabled": true,
-              "settings": {}
+              "settings": {
+              }
             },
             "announce_shipping": {
               "type": "message",
               "disabled": true,
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
             "announce_text",
             "announce_shipping"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "header": {
           "type": "header",
@@ -625,7 +651,8 @@
             "collection_block": {
               "type": "collection",
               "disabled": true,
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -647,11 +674,13 @@
             },
             "text": {
               "type": "text",
-              "settings": {}
+              "settings": {
+              }
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -659,7 +688,8 @@
             "text",
             "newsletter"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "popups": {
           "type": "popups",
@@ -679,14 +709,16 @@
             "newsletter_signup": {
               "type": "newsletter",
               "disabled": true,
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
             "cookies",
             "newsletter_signup"
           ],
-          "settings": {}
+          "settings": {
+          }
         }
       }
     }
